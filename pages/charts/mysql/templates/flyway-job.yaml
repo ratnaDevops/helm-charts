@@ -5,6 +5,7 @@ metadata:
   labels:
     app: {{ include "mysql.fullname" . }}
 spec:
+  backoffLimit: 15
   template:
     spec:
       containers:
